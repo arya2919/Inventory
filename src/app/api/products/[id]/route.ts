@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getSession } from '@/lib/auth'
-import { prisma } from '@/lib/prisma'
+import { getSession } from '../../../../lib/auth'
+import { prisma } from '../../../../lib/prisma'
 
 function parseOptionalFloat(value: unknown): number | null {
   if (value === '' || value === null || value === undefined) return null

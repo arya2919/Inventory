@@ -1,8 +1,8 @@
 import { cookies } from 'next/headers'
-import { verifyToken, type JWTPayload } from '@/lib/jwt'
+import { verifyToken, type JWTPayload } from './jwt'
 
 export type { JWTPayload }
-export { signToken } from '@/lib/jwt'
+export { signToken } from './jwt'
 
 export async function getSession(): Promise<JWTPayload | null> {
   const cookieStore = cookies()
